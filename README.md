@@ -11,11 +11,11 @@ pip install -r requirements.txt
 ```
 
 ## Scripts
-The main.py script is structured as a guided questionnaire, prompting the user step-by-step through each phase of the project — from data organization and preprocessing to model training and evaluation. This design makes it easier to run specific stages interactively and ensures flexibility during experimentation.
+The `main.py` script is structured as a guided questionnaire, prompting the user step-by-step through each phase of the project — from data organization and preprocessing to model training and evaluation. This design makes it easier to run specific stages interactively and ensures flexibility during experimentation.
 
-The script organize_data.py transforms the raw and disorganized CBIS-DDSM dataset into a structured format tailored for the binary classification task (benign vs malignant).
+The script `organize_data.py` transforms the raw and disorganized CBIS-DDSM dataset into a structured format tailored for the binary classification task (benign vs malignant).
 
-To use the organize_data.py script, you must first download the CBIS-DDSM dataset in DICOM format. This dataset is available on the official page of the Cancer Imaging Archive. 
+To use the `organize_data.py` script, you must first download the CBIS-DDSM dataset in DICOM format. This dataset is available on the official page of the Cancer Imaging Archive. 
 Note that downloading the dataset requires the external tool NBIA Data Retriever, which is also provided by TCIA.
 
 After using the `organize_data.py` script, the dataset's folder architecture would be like this:
