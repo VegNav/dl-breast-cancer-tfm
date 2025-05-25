@@ -7,7 +7,7 @@ from torchvision import transforms, datasets, models
 from torch.utils.data import DataLoader
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-def eval_densenet121OPW(data_dir, num_workers=4):
+def eval_densenet121_opw(data_dir, num_workers=4):
     batch_size = 32
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

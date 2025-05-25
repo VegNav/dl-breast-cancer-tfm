@@ -7,7 +7,7 @@ from torchvision import transforms, datasets, models
 from torch.utils.data import DataLoader
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-def eval_resnet18_opw(data_dir, num_workers=4):
+def eval_efficientnetB3_opw(data_dir, num_workers=4):
     batch_size = 32
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -33,12 +33,11 @@ def eval_resnet18_opw(data_dir, num_workers=4):
     }
 
     # Model
-    model = models.resnet18(weights="DEFAULT")
-    num_ftrs = model.fc.in_features
-    model.fc = nn.Sequential(
-        nn.Dropout(0.4),
-        nn.Linear(num_ftrs, 1)
-    )
+    model = models.efficientnet_b3(weights="DEFAULT")
+    model.classifier = nn.Sequential(
+    nn.Dropout(p=0.3),
+    nn.Linear(1536, 1))
+
     # Froze all the layers to only evaluate with the pretained weights
     for param in model.parameters():
         param.requires_grad = False
