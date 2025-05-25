@@ -40,7 +40,7 @@ The script `preprocess_data.py` includes all necessary preprocessing steps to pr
 - **CLAHE (Contrast Limited Adaptive Histogram Equalization)**: Enhances local contrast  
 - **Data augmentation**: Increases dataset variability through transformations
 
-Finally, the models folder contains the code to train and evaluate 4 arquitectures, 3 of them with 3 variations: OPW (Oly Pretrained Weights. No layer is trained), PFT (Partial Fine Tuning. Final layers are trained) and CPT (Complete Fine Tuning. All layers are trained). The following models are able to train and evaluate:
+Finally, the models folder contains the code to train and evaluate 4 arquitectures, 3 of them with 3 variations: OPW (Only Pretrained Weights. No layer is trained), PFT (Partial Fine Tuning. Final layers are trained) and CPT (Complete Fine Tuning. All layers are trained). The following models are able to train and evaluate:
 
 + **ResNet18_OPW**
 + **ResNet18_PFT**
