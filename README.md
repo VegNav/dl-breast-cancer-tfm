@@ -18,7 +18,7 @@ The script organize_data.py transforms the raw and disorganized CBIS-DDSM datase
 To use the organize_data.py script, you must first download the CBIS-DDSM dataset in DICOM format. This dataset is available on the official page of the Cancer Imaging Archive. 
 Note that downloading the dataset requires the external tool NBIA Data Retriever, which is also provided by TCIA.
 
-After using the organize_data.py script, the dataset's folder architecture would be like this:
+After using the `organize_data.py` script, the dataset's folder architecture would be like this:
 
 ```
 dataset/
@@ -57,4 +57,4 @@ I welcome contributions to improve the results; mistakes are just part of the pa
 
 
 ## Creator
-This project has been fully created by Pedro Vega.
+This project has been developed by Pedro Vega.
